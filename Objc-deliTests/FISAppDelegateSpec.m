@@ -47,12 +47,13 @@ describe(@"FISAppDelegate", ^{
 
     describe(@"addName:toDeliLine:", ^{
         it(@"should insert a name at the end of the line", ^{
-            deliLine = [appDelegate addName:@"Michael" toDeliLine:deliLine];
+            [appDelegate addName:@"Michael" toDeliLine:deliLine];
             expect(deliLine).to.equal(@[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael" ]);
         });
+        
         it(@"should work for multiple insertions", ^{
-            deliLine = [appDelegate addName:@"Michael" toDeliLine:deliLine];
-            deliLine = [appDelegate addName:@"Grace" toDeliLine:deliLine];
+            [appDelegate addName:@"Michael" toDeliLine:deliLine];
+            [appDelegate addName:@"Grace" toDeliLine:deliLine];
             expect(deliLine).to.equal(@[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace"]);
         });
     });

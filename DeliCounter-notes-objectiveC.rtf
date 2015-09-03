@@ -1,0 +1,420 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red249\green249\blue249;\red237\green237\blue237;
+\red92\green38\blue153;\red46\green13\blue110;\red196\green26\blue22;\red170\green13\blue145;\red38\green71\blue75;
+\red100\green56\blue32;\red63\green110\blue116;\red28\green0\blue207;\red0\green116\blue0;\red38\green38\blue38;
+\red245\green245\blue245;\red14\green114\blue164;\red133\green0\blue2;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww12700\viewh4800\viewkind0
+\deftab529
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Deli Counter lab:\
+\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f1\b \cf0 #4
+\f0\b0 \
+
+\f1\b add 1 or multiple names
+\f0\b0  to \'91deliLine\'92 and return the updated \'91deliLine\'92 mutable array:\
+\
+The Spec file is sending the names Michael & Grace into \'91addName\'92 (part of the method name) and adding them to the \'91deliLine\'92 mutable array as a test set up.\
+In the m. file, the string \'91name\'92 is the associated argument for the \'91addName\'92 part of the method name. \
+Since the \'91deliLine\'92 mutable array is already defined in the spec file, we can use \'91addObject\'92 method to add the submitted object \'91name\'92 to the mutable array \'91deliLine\'92.\
+because \'91addObject\'92 method is a void- type method, there is no return capture.\
+\
+\
+\
+test 3:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl540
+\ls1\ilvl0
+\f2\fs32 \cf2 \CocoaLigature1 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Build the method 
+\f0\fs18 \cb3 \expnd0\expndtw0\kerning0
+serveNextCustomerInDeliLine:
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ method. Save the first name in the 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+deliLine
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ to an 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+NSString
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ object within the method. Then remove the first object from the 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+deliLine
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ and return the name you saved in the string object. 
+\b \expnd0\expndtw0\kerning0
+Hint:
+\b0 \expnd0\expndtw0\kerning0
+ 
+\i \expnd0\expndtw0\kerning0
+Using
+\i0 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+removeObject:
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ 
+\i \expnd0\expndtw0\kerning0
+could be problematic for you. There's another method on
+\i0 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+NSMutableArray
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ 
+\i \expnd0\expndtw0\kerning0
+that will let you specify an object to remove by array index.
+\i0 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f1\b \cf0 test 2:
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl540
+\ls2\ilvl0
+\f2\fs32 \cf2 \CocoaLigature1 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Build the method 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+addName:toDeliLine:
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ method to add the submitted 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+name 
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+to the 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+deliLine
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+. Return the updated 
+\f0\fs24 \cb3 \expnd0\expndtw0\kerning0
+deliLine
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ mutable array.\uc0\u8232 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 Mark\'92s notes:\
+\pard\pardeftab720\sl342
+
+\f3\fs28 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 -deliLine is already a MutableArray so you don't need to make a new mutable array\
+-and you have the right idea, using the 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+addObject:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ method, but instead of hardcoding it take a string literal, think about what else the method is taking in when it's called (meaning the other argument besides 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+deliLine
+\f3 \cb1 \expnd0\expndtw0\kerning0
+)\
+-
+\f0 \cb4 \expnd0\expndtw0\kerning0
+addName:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ is part of the method name, what's the associated argument for that part of the method name?\
+-
+\f0 \cb4 \expnd0\expndtw0\kerning0
+addName:toDeliLine:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ is the full method name\
+-yup! and 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+name
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ is an 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+NSString
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+
+\f0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 my code:4pm
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx529\pardeftab529\pardirnatural
+\cf0 - (\cf5 NSMutableArray\cf0  *)addName:(\cf5 NSString\cf0  *)name toDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    [deliLine \cf6 addObject\cf0 :\cf7 @"Michael"\cf0 ];\
+    \
+    \cf8 return\cf0  deliLine;\
+\}\
+\
+\
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 my code:6pm
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx529\pardeftab529\pardirnatural
+\cf0 \
+- (\cf5 NSMutableArray\cf0  *)addName:(\cf5 NSString\cf0  *)name toDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+  \cf5 NSString\cf0  *addName = \cf7 @"Michael"\cf0 ;\
+  \cf5 NSString\cf0  *addAnotherName = \cf7 @"Grace"\cf0 ;\
+  \
+    name = [name \cf6 stringByAppendingString\cf0 :addName];\
+    name = [name \cf6 stringByAppendingString\cf0 :addAnotherName];\
+    \
+    [deliLine \cf6 addObject\cf0 :name];\
+    \
+    \cf8 return\cf0  deliLine;\
+\}\
+\
+\
+test result: 
+\f1\b expected: (Anita, Alan, Ada, Aaron, Alan, Michael, Grace), \
+			      got: (Anita, Alan, Ada, Aaron, Alan, MichaelMichaelGrace, GraceMichaelGrace)
+\f0\b0 \
+\
+\
+\
+\
+\
+\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f1\b \cf0 tests 1:
+\f0\b0 \
+    \cf9 describe\cf0 (\cf7 @"stringWithDeliLine:"\cf0 , ^\{\
+        \cf9 it\cf0 (\cf7 @"returns an NSString object"\cf0 , ^\{\
+            \cf10 expect\cf0 (deliString).\cf11 to\cf0 .\cf11 beKindOf\cf0 ([\cf5 NSString\cf0  \cf6 class\cf0 ]);\
+        \});\
+        \
+        \cf9 it\cf0 (\cf7 @"returns the customers in line as a string"\cf0 , ^\{\
+            \cf10 expect\cf0 (deliString).\cf11 to\cf0 .\cf10 equal\cf0 (\cf7 @"The line is:\\n1. Anita\\n2. Alan\\n3. Ada\\n4. Aaron\\n5. Alan"\cf0 );\
+        \});\
+        \
+        \cf9 it\cf0 (\cf7 @"explains if the line is empty"\cf0 , ^\{\
+            [deliLine \cf6 removeAllObjects\cf0 ];\
+            deliString = [appDelegate \cf9 stringWithDeliLine\cf0 :deliLine];\
+            \cf10 expect\cf0 (deliString).\cf11 to\cf0 .\cf10 equal\cf0 (\cf7 @"The line is currently empty."\cf0 );\
+        \});\
+    \});\
+\
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+my code:10:30am\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 - (\cf5 NSString\cf0  *)stringWithDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    \
+    \cf5 NSString\cf0  *deliString = \cf7 @"The line is:"\cf0 ;\
+    \
+    \cf8 if\cf0  ([deliLine \cf6 count\cf0 ] == \cf12 0\cf0 ) \{\
+        \cf8 return\cf0  \cf7 @"The line is currently empty."\cf0 ;\
+    \}\
+\
+    \cf8 for\cf0  (\cf5 NSUInteger\cf0  i = \cf12 0\cf0 ; i < [deliLine \cf6 count\cf0 ]; i++) \{\
+        \cf5 NSString\cf0  *names = deliLine[i];\
+        \cf5 NSString\cf0  *customers = [\cf5 NSString\cf0  \cf6 stringWithFormat\cf0 :\cf7 @"\\n%lu. %@"\cf0 , i+\cf12 1\cf0 , names];\
+        [deliString \cf6 stringByAppendingString\cf0 :customers];\
+    \}\
+    \
+    \
+    \cf8 return\cf0  deliString;\
+\}
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl544
+\cf2 \expnd0\expndtw0\kerning0
+\
+my code 12:20pm\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 - (\cf5 NSString\cf0  *)stringWithDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    \
+    \cf5 NSMutableString\cf0  *deliMutableString = [[\cf5 NSMutableString\cf0  \cf6 alloc\cf0 ] \cf6 init\cf0 ]; \cf13 //empty\cf0 \
+    \cf5 NSString\cf0  *deliString = \cf7 @"The line is:"\cf0 ;\
+\pard\tx529\pardeftab529\pardirnatural
+\cf13 //    deliString = [deliString stringByAppendingString:@"The line is:"];\cf0 \
+\
+    \cf8 for\cf0  (\cf5 NSUInteger\cf0  i = \cf12 0\cf0 ; i < [deliLine \cf6 count\cf0 ]; i++) \{\
+        \cf5 NSString\cf0  *names = deliLine[i];\
+        \cf5 NSString\cf0  *customers = [\cf5 NSString\cf0  \cf6 stringWithFormat\cf0 :\cf7 @"\\n%lu. %@"\cf0 , i+\cf12 1\cf0 , names];\
+        [deliMutableString \cf6 stringByAppendingString\cf0 :customers];\
+    \}\
+    \
+    \cf8 if\cf0  ([deliLine \cf6 count\cf0 ] == \cf12 0\cf0 ) \{\
+        \cf8 return\cf0  \cf7 @"The line is currently empty."\cf0 ;\
+    \}\
+    \
+    deliString = [\cf5 NSString\cf0  \cf6 stringWithString\cf0 :deliMutableString];\
+    \
+    \cf8 return\cf0  deliString;\
+\}\
+\cf13 //right, because right now you're copying the mutable string when it's empty, and then appending "The line is:" to the static string. Everything else that you're doing to the mutable string isn't getting returned.\cf0 \
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+my code 4pm:\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+- (\cf5 NSString\cf0  *)stringWithDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    \
+    \cf5 NSMutableString\cf0  *deliMutableString = [[\cf5 NSMutableString\cf0  \cf6 alloc\cf0 ] \cf6 initWithFormat\cf0 :\cf7 @"The line is:"\cf0 ];\
+        \cf8 for\cf0  (\cf5 NSUInteger\cf0  i = \cf12 0\cf0 ; i < [deliLine \cf6 count\cf0 ]; i++) \{\
+        \cf5 NSString\cf0  *names = deliLine[i];\
+        \cf5 NSString\cf0  *customers = [\cf5 NSString\cf0  \cf6 stringWithFormat\cf0 :\cf7 @"\\n%lu. %@"\cf0 , i+\cf12 1\cf0 , names];\
+        [deliMutableString \cf6 stringByAppendingString\cf0 :customers];\
+    \}\
+    \
+    \cf8 if\cf0  ([deliLine \cf6 count\cf0 ] == \cf12 0\cf0 ) \{\
+        \cf8 return\cf0  \cf7 @"The line is currently empty."\cf0 ;\
+    \}\
+    \
+\
+    \cf5 NSString\cf0  *deliString = [\cf5 NSString\cf0  \cf6 stringWithString\cf0 :deliMutableString];\
+    \
+    \cf8 return\cf0  deliString;\
+\}\
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+my code 1:30pm next day\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 - (\cf5 NSString\cf0  *)stringWithDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    \
+    \cf5 NSMutableString\cf0  *deliMutableString = [[\cf5 NSMutableString\cf0  \cf6 alloc\cf0 ] \cf6 initWithFormat\cf0 :\cf7 @"The line is:"\cf0 ];\
+        \cf8 for\cf0  (\cf5 NSUInteger\cf0  i = \cf12 0\cf0 ; i < [deliLine \cf6 count\cf0 ]; i++) \{\
+        \cf5 NSString\cf0  *names = deliLine[i];\
+        \cf5 NSString\cf0  *customers = [\cf5 NSString\cf0  \cf6 stringWithFormat\cf0 :\cf7 @"\\n%lu. %@"\cf0 , i+\cf12 1\cf0 , names];\
+        [deliMutableString \cf6 stringByAppendingString\cf0 :customers];\
+    \}\
+    \
+    \cf8 if\cf0  ([deliLine \cf6 count\cf0 ] == \cf12 0\cf0 ) \{\
+        \cf8 return\cf0  \cf7 @"The line is currently empty."\cf0 ;\
+    \}\
+    \
+\
+    \cf5 NSString\cf0  *newString = [\cf5 NSString\cf0  \cf6 stringWithString\cf0 :deliMutableString];\
+    \
+    \cf8 return\cf0  newString;\
+\}
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl544
+\cf2 \expnd0\expndtw0\kerning0
+\
+my code 4pm:\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\i0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 - (\cf5 NSString\cf0  *)stringWithDeliLine:(\cf5 NSMutableArray\cf0  *)deliLine\{\
+    \cf5 NSString\cf0  *deliLineString = [deliLine \cf6 componentsJoinedByString\cf0 :\cf7 @", "\cf0 ]; \cf13 //conversion\cf0 \
+    \
+    \cf5 NSMutableString\cf0  *deliMutableString = [[\cf5 NSMutableString\cf0  \cf6 alloc\cf0 ] \cf6 initWithFormat\cf0 :\cf7 @"The line is: "\cf0 ];\
+    [deliMutableString \cf6 appendString\cf0 :deliLineString];\
+    \cf8 for\cf0  (\cf5 NSUInteger\cf0  i = \cf12 0\cf0 ; i < [deliLine \cf6 count\cf0 ]; i++) \{\
+        \cf5 NSString\cf0  *names = deliLine[i];\
+        \cf5 NSString\cf0  *customers = [\cf5 NSString\cf0  \cf6 stringWithFormat\cf0 :\cf7 @"\\n%lu. %@"\cf0 , i+\cf12 1\cf0 , names];\
+        [deliMutableString \cf6 stringByAppendingString\cf0 :customers];\
+    \}\
+    \
+    \cf8 if\cf0  ([deliLine \cf6 count\cf0 ] == \cf12 0\cf0 ) \{\
+        \cf8 return\cf0  \cf7 @"The line is currently empty."\cf0 ;\
+    \}
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl544
+\cf2 \expnd0\expndtw0\kerning0
+\
+Mark\'92s notes on code above:\
+-
+\f3\i0\fs28 \cf2 \expnd0\expndtw0\kerning0
+Drop your usage of 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+deliLineString
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ and the
+\f0 \cb4 \expnd0\expndtw0\kerning0
+componentsJoinedByString:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ method on your opening\
+-within the loop, the 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+stringByAppendingString:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ method is the 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+NSString 
+\f3 \cb1 \expnd0\expndtw0\kerning0
+method the returns a concatenated string. Instead, call the 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+appendString:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ or 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+appendFormat:
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ method that are the 
+\f0 \cb4 \expnd0\expndtw0\kerning0
+NSMutableString
+\f3 \cb1 \expnd0\expndtw0\kerning0
+ methods
+\f2\i\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+general notes:\
+\pard\pardeftab720\sl544
+
+\i0 \cf2 \expnd0\expndtw0\kerning0
+\'91sugar\'92 or \'92subscripting\'92 example:\
+\pard\pardeftab720\sl380
+
+\f0\fs28 \cf14 \cb15 \expnd0\expndtw0\kerning0
+instructors[\cf16 \expnd0\expndtw0\kerning0
+0\cf14 \expnd0\expndtw0\kerning0
+]\
+\pard\pardeftab720\sl544
+
+\f2\i\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl380
+
+\f0\i0\fs20 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[welcomeToThe 
+\f1\b \cf17 \expnd0\expndtw0\kerning0
+stringByAppendingString
+\f0\b0 \cf2 \expnd0\expndtw0\kerning0
+:flatironSchool];
+\fs30 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl380
+
+\f4\fs26 \cf0 \expnd0\expndtw0\kerning0
+stringByAppendingString method \cf2 \cb1 \expnd0\expndtw0\kerning0
+links the recipient string with another \cb3 \expnd0\expndtw0\kerning0
+NSString\cb1 \expnd0\expndtw0\kerning0
+ supplied through an argument and returns the combination of the two strings\
+\
+\pard\pardeftab720
+
+\f0\fs28 \cf14 \cb0 \expnd0\expndtw0\kerning0
+void
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+ which means that they don't return anything and thus don't require a capture. For example, the 
+\f0\fs28 \cb0 \expnd0\expndtw0\kerning0
+appendString:}
